@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineer Requirement List</title>
+</head>
+<body>
+    <h1>Engineer Requirement List</h1>
+    <ul>
+        {% for requirement in requirements %}
+            <li>{{ requirement.band }} - Head Count: {{ requirement.head_count }}</li>
+            
+        {% endfor %}
+    </ul>
+</body>
+</html>

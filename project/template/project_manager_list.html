@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Manager List</title>
+</head>
+<body>
+    <h1>Project Manager List</h1>
+    <ul>
+        {% for manager in managers %}
+            <li>{{ manager.project_manager_id  }}</li>
+            <li>{{ manager.project_manager_title }}</li>
+            <li>{{ manager.project_manager_name }}</li>
+            <li>{{ manager.project_manager_email}}</li>
+            <li>{{ manager.project_head_count}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
